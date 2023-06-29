@@ -1,0 +1,19 @@
+{
+  "name": "desafiomodulo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "d": "^1.0.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}

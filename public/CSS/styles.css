@@ -1,0 +1,298 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #ebebeb;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+.main-header {
+    padding: 20px 20px 0;
+    background-color: #EAC926;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+main{
+    width: 90%;
+    margin: 240px auto 0;
+}
+
+.main-header-no-purchase{
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+    padding: 10px;
+}
+
+.copy-header {
+    font-weight: 200;
+    text-align: center;
+}
+
+.search {
+    display: flex;
+}
+.navbar {
+    display: none;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li{
+    margin: 0 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.titulares {
+    font-size: 24px;
+}
+.precios {
+    font-size: 18px;
+}
+
+.bienvenida{
+    width:100%;
+}
+.descuentos {
+    font-size: 16px;
+}
+p.descripciones{
+    display: none;
+}
+.descripciones {
+    font-size: 16px;
+}
+
+.datosproducto:hover p.descripciones {
+    display:block
+}
+
+.burger-menu i {
+
+    background-color: #0044AA;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    display: block;
+    margin:auto;
+    text-align: center;
+}
+
+
+.search i {
+    background-color: #ebebeb;
+    border: 1px solid black;
+    color: black;
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+footer {
+    text-align: center;
+    background-color: white;
+    border-bottom: 10px;
+    padding: 10px;
+
+}
+.icono-footer{
+    text-align: center;
+}
+.icono-footer i{
+    color: #0044AA;
+    font-size: 2em;
+    border-bottom: 10px;
+    transition: all .3s;
+}
+.icono-footer i:hover{
+    color: #00aa03;
+}
+section.banner img{
+    width: 100%;
+}
+
+main section article img {
+    width: 100%;
+}
+main section article {
+    background-color: white;
+}
+p.descuentos{
+    color: #39b54a;
+    font-weight: bold;
+}
+p.precios{
+    text-align: left;
+    color: black;
+}
+
+main section p.descripciones{
+    text-align: left;
+}
+
+h4{
+    font-size: 24px;
+}
+
+.datosproducto{
+    color: #666;
+    text-align: left;
+    border: solid #ebebeb 1px;
+    padding: 15px
+}
+
+.productos {
+    text-align: center;
+    border: solid #ebebeb 1px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+main section p{
+    padding: 0%;
+}
+
+.productos article {
+    margin-bottom: 10px;
+}
+
+.productos article {
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+@media (min-width: 361px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: 350px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .productos article {
+        flex-basis: 49% ;
+
+    }
+    .navbar {
+        display: flex;
+    }
+    .main-header-no-purchase {
+        display: block;
+    }
+}
+
+@media (min-width:768px) {
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .copy-header {
+        max-width: none;
+    }
+    .productos article {
+        flex-basis: 23.5% ;
+        margin-bottom: 0px;
+    }
+    .navbar {
+        display: flex;
+    }
+    .main-header-no-purchase {
+        display: block;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    footer section{
+        flex-basis: 33.3%;
+    }
+    footer section:nth-child(4) {
+        flex-basis: 100%;
+        text-align: left;
+    }
+}
+@media (min-width: 1200px) {
+    main {
+        margin-top: 500px;
+    }
+}
+
+.pd {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pd .precios{
+    /*width: 30%;*/
+    flex-basis: 30%;
+}
+
+.pd .descuentos{
+    /*width: 70%;*/
+    flex-basis: 70%;
+}
+
+main section article i {
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 20px ;
+    top: -30px;
+    color: #39b54a;
+    transition: all .3s;
+}
+
+main section article i:hover {
+    transform: rotate(-90deg)
+}
+
+main section article .pd{
+    position: relative;
+}
+
+footer section i{
+    transition: all .3s;
+}
